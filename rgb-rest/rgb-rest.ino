@@ -120,7 +120,7 @@ void flash() {
 
 void help() {
     String result = "Available endpoints: \n\n/led [POST] { \"LED\" : [$brightness, $R, $G, $B]} - set brightness [1; 4] and values to each color [0; 255] in decimal format. You MUST specify the correct Content-Type and Content-Length headers.";
-    result+="\n\tExample: {\"RGB\" : [4, 255, 165, 0]} - sets the orange color with maximum brightness.\n";
+    result+="\n\tExample: {\"LED\" : [4, 255, 165, 0]} - sets the orange color with maximum brightness.\n";
     result += "\n/flash [POST] { \"FLASH\" : [$counter, $interval]} - flash the CURRENT color $counter times with the specified duration (milliseconds).";
     result+="\n\tExample: {\"FLASH\" : [10, 100]} - flashes the current color 10 times with 100ms delay.\n";
     result += "\n/pwm [POST] { \"PWM\" : [$new_R, $new_G, $new_B, $interval, $steps]} - change the CURRENT color smoothly to the new values. Brightness will not be changed. Interval should be provided with milliseconds.";
