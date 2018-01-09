@@ -16,7 +16,7 @@ Provides the following REST API:
 ```
 set brightness [1; 4] and values to each color [0; 255] in decimal format. You MUST specify the correct Content-Type and Content-Length headers.
 
-_Example: {"RGB" : [4, 255, 165, 0]} - sets the orange color with maximum brightness._
+_Example: {"LED" : [4, 255, 165, 0]} - sets the orange color with maximum brightness._
 
 ###### /flash [POST]
 ```javascript
